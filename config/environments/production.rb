@@ -76,15 +76,15 @@ Rails.application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
   #
-  config.paperclip_defaults = {
-    storage: :s3,
-    s3_credentials: {
-      bucket: Rails.application.secrets.S3_BUCKET_NAME,
-      access_key_id: Rails.application.secrets.AWS_ACCESS_KEY_ID,
-      secret_access_key: Rails.application.secrets.AWS_SECRET_ACCESS_KEY,
-      s3_region: Rails.application.secrets.AWS_REGION
-    }
-  }
+  # config.paperclip_defaults = {
+  #   storage: :s3,
+  #   s3_credentials: {
+  #     bucket: Rails.application.secrets.S3_BUCKET_NAME,
+  #     access_key_id: Rails.application.secrets.AWS_ACCESS_KEY_ID,
+  #     secret_access_key: Rails.application.secrets.AWS_SECRET_ACCESS_KEY,
+  #     s3_region: Rails.application.secrets.AWS_REGION
+  #   }
+  # }
 
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
